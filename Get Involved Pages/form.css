@@ -1,0 +1,224 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-synthesis:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+body {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+	background: url('img/background.jpg');
+	background-size:100% 100%;
+}
+
+.container {
+	max-width:500px;
+	width:100%;
+	margin: auto;
+    position:relative;
+	border: 1px;
+	/* border-radius: 20px; */
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"],
+#contact select option, 
+#contact input[type="url"], 
+#contact textarea,
+#contact select,
+#contact button[type="submit"] { 
+	font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+}
+
+#contact {
+	background:rgba(243, 242, 242, 0.911);
+	padding:25px;
+	margin:50px 0;
+	border-radius: 8px;
+	height: 741;
+}
+
+#contact h3 {
+	color: rgb(46, 124, 65);
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial;
+}
+
+#contact h4 {
+	padding-bottom: 0px;
+	margin:0px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+	/* border-radius: 20px; */
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"],
+#contact select, 
+#contact input[type="password"], 
+#contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin: 5px 0px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+#contact input[type="text"]:hover, 
+#contact input[type="email"]:hover, 
+#contact input[type="tel"]:hover,
+#contact select :hover,
+#contact input[type="password"]:hover, 
+#contact textarea:hover {
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
+	border: 1px solid #AAA;
+}
+
+#contact textarea {
+	height:50px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:rgb(16, 104, 56);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius: 8px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#F96;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { 
+	box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, 
+#contact select:focus,
+#contact select :focus,
+#contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+.posit, .posit img {
+	display: none;
+}
+/* main container */
+.maincont {
+	height: 741px;
+}
+
+@media screen and (min-width: 920px) {
+	/* main container */
+	.maincont {
+		height: 600px;
+		margin-top: 30px;
+		padding-top: 30px;
+		width: 1200px;
+		margin: auto;
+
+	}
+	#contact {
+		/* margin-top: 0px;
+		padding-top: 0px; */
+		width: 500px;
+
+		padding: 0px;
+		/* margin-left: 30px; */
+		margin:5px 30px;
+		border-radius: 8px;
+		height: 590px;
+	}
+	#contact h4,
+	#contact h3,
+	.itemgroup {
+		border: medium none !important;
+		margin-left: 50px;
+		/* min-width: 100%; */
+		padding: 0;
+		width: 100%;
+		/* border-radius: 20px; */
+	}
+	#contact h4 {
+		margin-top: 8px;
+	} 
+	.container {
+		height: 600px;
+		margin: 0px;
+		width: 700px;
+		float: left;
+		margin-left: 5px;
+	}
+	.posit {
+		width: 600px;
+		overflow: hidden;
+		border-radius: 10px;
+		float: left;
+		display: block;
+	}
+	.posit img {
+		height: 600px;
+		width: 100%;
+		display: block;
+	}
+	#contact textarea {
+		padding: 0px;
+		height: 30px;
+	}
+
+	#contact input[type="text"], 
+	#contact input[type="email"], 
+	#contact input[type="tel"],
+	#contact select, 
+	#contact input[type="password"],
+	#contact button[type="submit"],
+	#contact textarea {
+		width:400px;
+	}	
+}
