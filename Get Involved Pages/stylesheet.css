@@ -283,4 +283,21 @@ main .main-section {
     #menu {
     	display: none;
     }
+    .sub-section .sub-section-picture img {
+    	display: none;
+    }
+    .sub-section .sub-section-action img {
+    	display: none;
+    }
+    .sub-section .sub-section-text {
+		background: #fbfbfb;
+	}
+
+}
+@media screen and (max-width: 900px) {
+	.sub-section .sub-section-picture img {
+		display: none;
+	}
+	#menu {
+    	display: none;
 }
